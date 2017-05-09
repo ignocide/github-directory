@@ -91,7 +91,11 @@ dir.search({
      size: '>10',
      path: 'lib',
      filename: 'test',
-     extension: 'js'
+     extension: 'js',
+     order: 'desc',
+     sort: 'indexed',
+     page: 1,
+     per_page: 2
    }
 ```
 

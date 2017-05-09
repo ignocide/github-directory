@@ -39,25 +39,28 @@ dir.trees('7927b7dd5a16b347a69ab9bdbcc33dc5ecc44c75')
   //     url: 'https://api.github.com/repos/ignocide/github-directory/git/blobs/fea7cdbf48c0ffeb9905fc254568869f888b4655' } ],
   //     truncated: false }
   })
-  .catch(function (err) {
-    console.log(err)
-  })
-
-// var searchObj = {
-  //   in: 'file', // one of 'file','path','file,path'
-  //   language: 'java',
-  //   fork: false,
-  //   size: '>10',
-  //   path: 'lib',
-  //   filename: 'test',
-  //   extension: 'js'
-  // }
+var searchObj = {
+  in: 'file', // one of 'file','path','file,path'
+  language: 'java',
+  fork: false,
+  size: '>10',
+  path: 'lib',
+  filename: 'test',
+  extension: 'js',
+  order: 'desc',
+  sort: 'indexed',
+  page: 1,
+  per_page: 2
+}
 
 dir.search({
-  path: 'lib'
+  order: 'desc',
+  sort: 'indexed',
+  page: 1,
+  per_page: 2
 })
   .then(function (result) {
-    console.log(result.data)
+    console.log('search', result.data)
 
   // { total_count: 1,
   //   incomplete_results: false,
@@ -72,12 +75,14 @@ dir.search({
   //     score: 1,
   //     text_matches: [] } ] }
   })
+  .catch(function (err) {
+    console.log(err)
+  })
 
 dir.file('7cce552250a144a5eaaec05aa0c540efb6a47b6d')
   .then(function (result) {
     console.log(result.data)
 
-    // # github-directory
-    //     use a github as directory
-
+  // # github-directory
+  //     use a github as directory
   })
