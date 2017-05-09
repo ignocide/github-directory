@@ -1,0 +1,25 @@
+{
+  "name": "github-directory",
+  "version": "1.0.0",
+  "description": "use a github as directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ignocide@github.com/ignocide/github-directory.git"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "ignocide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ignocide/github-directory/issues"
+  },
+  "homepage": "https://github.com/ignocide/github-directory#readme",
+  "dependencies": {
+    "axios": "^0.16.1"
+  }
+}
