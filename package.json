@@ -1,6 +1,6 @@
 {
   "name": "github-directory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "use a github as directory",
   "main": "index.js",
   "scripts": {
